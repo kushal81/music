@@ -1,6 +1,6 @@
 {
   "token": "Discord-Bot-Token-goes-here!",
-  "prefix": "k!",
+  "prefix": "&",
   "ksoftapi": "NEEDED_FOR_LYRICS",
   "youtubeCookie": "",
   "spotify_api": {
