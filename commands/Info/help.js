@@ -46,14 +46,14 @@ module.exports = {
           .setColor(ee.color)
           .setThumbnail(ee.footericon)
           .setTitle("HELP MENU 🔰 Commands")
-          .setDescription(`**[Invite me with __Slash Commands__ Permissions](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands), cause all of my Commands are available as Slash Commands too!**\n\n> Check out the [**Dashboard**](${websiteSettings.website.domain}/dashboard/${message.guild.id}) or the [**Live Music Queue**](${websiteSettings.website.domain}/queue/${message.guild.id})`)
+          .setDescription(`**THE ROCKER** Best music bot with buttons and slash command! MADE BY KUSHAL AGARWAL...`)
           .setFooter(`To see Command Description & Information, type: ${prefix}help [CMD NAME]`, ee.footericon);
         const commands = (category) => {
           return client.commands.filter((cmd) => cmd.category === category).map((cmd) => `\`${cmd.name}\``);
         };
         try {
           for (let i = 0; i < client.categories.length; i += 1) {
-            const current = client.categories[i];
+           
             const items = commands(current);
             embed.addField(`**${current.toUpperCase()} [${items.length}]**`, `> ${items.join(", ")}`);
           }
